@@ -1,19 +1,18 @@
-## MakerDAO DssVest.sol Repo Review
+##                             MakerDAO DssVest.sol Repo Review
 
+![pragma!](../images/Screenshot from 2022-10-07 03-48-08.png)
+Pragma solidity 0.6.12 : The compiler version used to compile the contract by the EVM compiler.
 
+Interface : are contracts that contains function signatures without the function definition implementation and are identified using the “interface” keyword.
 
+External : It is a function visibility that the function can only be access from outside its existing contract.
 
+View : It is a function state mutability that promise not to modify the state but can only read the state.
 
-# Pragma solidity 0.6.12 : The compiler version used to compile # # the contract by the EVM compiler.
-
-[2022-10-07 03-48-08.png]
-# Interface : are contracts that contains function signatures without the function definition implementation and are identified using the “interface” keyword.
-# External : It is a function visibility that the function can only be access from outside its existing contract.
-# View : It is a function state mutability that promise not to modify the state but can only read the state.
-# Interface MintLike : Provides a minting function interface to mint token.
-# mint: function mint is a external function signature of MintLike for minting token with address(user address) and uint256(amount). 
-# Interface ChainlogLike : Provides a function signature to read a bytes32 state variable and returns address as the output.
-# getAddress : function getAddress is an external view function signature of ChainlogLike that accepts a bytes32 parameter and returns address as output. 
+Interface MintLike : Provides a minting function interface to mint token.
+mint: function mint is a external function signature of MintLike for minting token with address(user address) and uint256(amount). 
+Interface ChainlogLike : Provides a function signature to read a bytes32 state variable and returns address as the output.
+getAddress : function getAddress is an external view function signature of ChainlogLike that accepts a bytes32 parameter and returns address as output. 
 Interface DaiJoinLike : Provides a function signature to exit contracts.
 exit : function exit is an external function signature of DaiJoinLike that accepts address and uint256 as parameter to trigger exit operation in a contract.
 Interface VatLike : Provides three(3) function signatures of hope,suck and live to perform operation on address, uint256 and read a state variable.
