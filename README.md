@@ -1,6 +1,7 @@
-##                             MakerDAO DssVest.sol Repo Review
+#                            MakerDAO DssVest.sol Repo Review
 
 ![pragma!](./images/pragma.png)
+
 Pragma solidity 0.6.12 : The compiler version used to compile the contract by the EVM compiler.
 
 Interface : are contracts that contains function signatures without the function definition implementation and are identified using the “interface” keyword.
